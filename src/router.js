@@ -7,6 +7,8 @@ import Links from "./views/Links.vue";
 import Results from "./views/Results.vue";
 import MSA from "./views/MSA.vue";
 import Epitopes from "./views/Epitopes.vue";
+import Blast from "./views/Blast.vue";
+import Antigenic from "./views/Antigenic.vue";
 
 Vue.use(Router);
 
@@ -18,6 +20,16 @@ export default new Router({
       path: "/",
       name: "home",
       component: Home
+    },
+    {
+      path: "/bst",
+      name: "bst",
+      component: Blast
+    },
+    {
+      path: "/antigenic",
+      name: "antigenic",
+      component: Antigenic
     },
     {
       path: "/search",

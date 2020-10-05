@@ -1,7 +1,7 @@
 <template>
   <div style="text-align: center">  
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"><a class="navbar-brand" href="/">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-pink"><a class="navbar-brand" href="/">
       <b>HCoronavirusesDB</b><span class="d-none d-sm-inline"> | SARS-COV-2, SARS, and MERS Viruses Database and Analysis Resource</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -11,6 +11,12 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <router-link to="/" v-bind:class="[$router.currentRoute.name == 'home' ? 'active' : '', 'nav-link']">Home</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/bst" v-bind:class="[$router.currentRoute.name == 'blast' ? 'active' : '', 'nav-link']">BLAST search</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link to="/antigenic" v-bind:class="[$router.currentRoute.name == 'antigenic' ? 'active' : '', 'nav-link']">Antigenic Epitopes</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/links" v-bind:class="[$router.currentRoute.name == 'links' ? 'active' : '', 'nav-link']" class="nav-link">External Links</router-link>
