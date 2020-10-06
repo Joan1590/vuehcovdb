@@ -2,13 +2,15 @@ import Vue from "vue";
 import Router from "vue-router";
 import Search from "./views/Search.vue";
 import Home from "./views/Home.vue";
-import About from "./views/About.vue";
+import Contact from "./views/Contact.vue";
 import Links from "./views/Links.vue";
 import Results from "./views/Results.vue";
 import MSA from "./views/MSA.vue";
 import Epitopes from "./views/Epitopes.vue";
 import Blast from "./views/Blast.vue";
 import Antigenic from "./views/Antigenic.vue";
+import About from "./views/About.vue";
+import Soon from "./views/Soon.vue";
 
 Vue.use(Router);
 
@@ -49,9 +51,9 @@ export default new Router({
       props: true
     },
     {
-      path: "/about",
-      name: "about",
-      component: About,
+      path: "/contact",
+      name: "contact",
+      component: Contact,
       props: true
     },
     {
@@ -64,6 +66,21 @@ export default new Router({
       path: "/epitopes",
       name: "epitopes",
       component: Epitopes,
+    },
+    {
+      path: "/about",
+      name: "about",
+      component: About,
+    },
+    {
+      path: "/submit",
+      name: "submit",
+      component: Soon,
+    },
+    {
+      path: "/cite",
+      name: "cite",
+      component: Soon,
     },
   ]
 });
